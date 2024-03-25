@@ -8,6 +8,6 @@
 
         // Navigation properties
         public ICollection<AccessCode> AccessCodes { get; set; }
-        // Other related entities
+       
     }
 }

@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 // Configure DbContext with SQL Server
-builder.Services.AddDbContext<DataContext>(options =>
+builder.Services.AddDbContext<DbSet>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CannabisDatabase")));
 
 // Add Swagger/OpenAPI support if in Development environment

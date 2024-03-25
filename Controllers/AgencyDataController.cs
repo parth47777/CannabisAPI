@@ -9,9 +9,9 @@ namespace CannabisApplication.Controllers
     [ApiController]
     public class AgencyDataController : ControllerBase
     {
-        private readonly DataContext _context;
+        private readonly DbSet _context;
 
-        public AgencyDataController(DataContext context)
+        public AgencyDataController(DbSet context)
         {
             _context = context;
         }
@@ -39,7 +39,7 @@ namespace CannabisApplication.Controllers
             }
         }
 
-        // Example HTTP GET method to get AgencyData by ID
+        // HTTP GET method to get AgencyData by ID
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {

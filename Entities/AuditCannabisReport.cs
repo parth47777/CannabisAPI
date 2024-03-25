@@ -11,7 +11,6 @@
         public string Audit_Action { get; set; }
 
         // Navigation properties
-        // Assuming CannabisReport and Agency relationships
         public CannabisReport CannabisReport { get; set; }
         public Agency Agency
         {

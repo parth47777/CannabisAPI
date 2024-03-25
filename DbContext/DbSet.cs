@@ -3,9 +3,9 @@ using CannabisAPI.Models;
 
 namespace CannabisAPI.Data
 {
-    public class DataContext : DbContext
+    public class DbSet : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options)
+        public DbSet(DbContextOptions<DbSet> options)
             : base(options)
         {
         }
